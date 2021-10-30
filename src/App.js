@@ -5,6 +5,7 @@ import Header from "./components/Shared/Header";
 import Footer from "./components/Shared/Footer";
 import Home from "./components/Home/Home/Home";
 import NotFound from "./components/Shared/NotFound";
+import Login from "./components/Shared/Login/Login";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
             </Route>
             <Route path="/home">
               <Home></Home>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
             </Route>
             <Route path="*">
               <NotFound></NotFound>
