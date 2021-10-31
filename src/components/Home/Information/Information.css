@@ -1,0 +1,12 @@
+.fas {
+  color: rgb(88, 56, 205);
+  background-color: rgb(157, 85, 193);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}

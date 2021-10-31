@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Guide from "../Guides/Guide";
+import Guide from "./Guide";
 
-const Services = () => {
+const GuidesHome = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
     fetch("http://localhost:5000/guides")
@@ -16,7 +16,7 @@ const Services = () => {
       </p>
       <h2 className="text-dark fw-bolder text-start ms-5">Our guides</h2>
       <div className="service-container d-flex justify-content-center gap-4">
-        {services.map((service) => (
+        {services.slice(0, 6).map((service) => (
           <Guide key={service._id} service={service}></Guide>
         ))}
       </div>
@@ -24,4 +24,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default GuidesHome;

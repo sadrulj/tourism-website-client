@@ -1,7 +1,9 @@
 import React from "react";
 import Banner from "../Banner/Banner";
-import Guides from "./../../Guides/Guides";
-import Services from "../Services/Services";
+import ServicesHome from "../Services/ServicesHome";
+import Information from "../Information/Information";
+import "./Home.css";
+import GuidesHome from "../../Guides/GuidesHome";
 
 const Home = () => {
   return (
@@ -13,48 +15,29 @@ const Home = () => {
         <Banner></Banner>
       </div>
       <div className="container">
-        <Guides></Guides>
+        <GuidesHome></GuidesHome>
       </div>
       <div className="container-fluied shadow bg-body">
-        <Services></Services>
+        <ServicesHome></ServicesHome>
       </div>
       <div className="container mt-5">
-        <h4 className="text-danger fw-bolder">
-          ONE-OF-A-KIND VACATION RENTALS
-        </h4>
-        <h2 className="fw-bolder">Booking with us is easy</h2>
-        <div className="d-lg-flex  justify-content-center my-5">
-          <div className="card-body">
-            <h4 className="card-title">Find the perfect rental</h4>
-            <p className="card-text">
-              One morning, when Gregor Samsa woke from troubled dreams, he found
-              himself transformed in his bed in
-            </p>
-          </div>
-          <div className="card-body">
-            <h4 className="card-title">Book with confidence</h4>
-            <p className="card-text">
-              The bedding was hardly able to cover it and seemed ready to slide
-              off any moment. His many legs, pit
-            </p>
-          </div>
-          <div className="card-body">
-            <h4 className="card-title">Enjoy your vacation</h4>
-            <p className="card-text">
-              His room, a proper human room although a little too small, lay
-              peacefully between its four familiar
-            </p>
-          </div>
-        </div>
+        <Information></Information>
       </div>
-      <div>
+      <div class="card bg-dark text-white">
         <img
           src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/photo/photo-1497436072909-60f360e1d4b1.jpg"
-          className=""
+          className="card-img"
+          height="600px"
           alt=""
         />
+        <div className="card-img-overlay d-flex justify-content-start  align-items-center ms-4">
+          <h1 className="card-title fs-1 fw-bolder">
+            Ready for your next holidays?
+          </h1>
+          <button className="btn bg-white ms-3">Get Started</button>
+        </div>
       </div>
-      <div className="d-flex flex-wrap justify-content-center my-5">
+      <div className="d-flex flex-wrap justify-content-center mt-5">
         <img
           src="https://d19m59y37dris4.cloudfront.net/directory/2-0-1/img/instagram/instagram-1.jpg"
           class="img-thumbnail"
