@@ -7,7 +7,7 @@ const Booking = () => {
   const { id } = useParams();
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${id}`)
+    fetch(`https://grisly-fangs-84788.herokuapp.com/services/${id}`)
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, [id]);
@@ -23,7 +23,7 @@ const Booking = () => {
     const email = emailRef.current.value;
     const contact = contactRef.current.value;
     const newItem = { bookingId, fullName, email, contact };
-    fetch("http://localhost:5000/booking", {
+    fetch("https://grisly-fangs-84788.herokuapp.com/booking", {
       method: "POST",
       headers: {
         "content-type": "application/json",

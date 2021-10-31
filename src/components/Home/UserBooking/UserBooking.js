@@ -9,14 +9,16 @@ const Service = () => {
   }, []);
 
   const loadItems = async () => {
-    const result = await axios.get("http://localhost:5000/booking");
+    const result = await axios.get(
+      "https://grisly-fangs-84788.herokuapp.com/booking"
+    );
     setItems(result.data);
   };
 
   const handleDeleteItem = (id) => {
     const proceed = window.confirm("Are you sure, you want to delete?");
     if (proceed) {
-      const url = `http://localhost:5000/booking/${id}`;
+      const url = `https://grisly-fangs-84788.herokuapp.com/booking/${id}`;
       fetch(url, {
         method: "DELETE",
       })

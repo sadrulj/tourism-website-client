@@ -4,7 +4,7 @@ import Guide from "../Guides/Guide";
 const Services = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/guides")
+    fetch("https://grisly-fangs-84788.herokuapp.com/guides")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);

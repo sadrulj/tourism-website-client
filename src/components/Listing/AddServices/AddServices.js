@@ -15,7 +15,7 @@ const AddService = () => {
     const price = priceRef.current.value;
 
     const newItem = { image, title, type, rating, price };
-    fetch("http://localhost:5000/services", {
+    fetch("https://grisly-fangs-84788.herokuapp.com/services", {
       method: "POST",
       headers: {
         "content-type": "application/json",

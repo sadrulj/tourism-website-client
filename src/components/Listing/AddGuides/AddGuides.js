@@ -11,7 +11,7 @@ const AddService = () => {
     const sub_title = sub_titleRef.current.value;
 
     const newItem = { image, title, sub_title };
-    fetch("http://localhost:5000/guides", {
+    fetch("https://grisly-fangs-84788.herokuapp.com/guides", {
       method: "POST",
       headers: {
         "content-type": "application/json",
